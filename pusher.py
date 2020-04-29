@@ -7,5 +7,8 @@ today = datetime.today().strftime('%Y-%m-%d')
 with open('text.txt', 'w') as update:
     update.write(f'{today}')
 
-subprocess.Popen(['C:/Program Files/Git/bin/git', 'add', '.'])
-subprocess.Popen(['C:/Program Files/Git/bin/git', 'commit', '-m', '"minor changes"'])
+path = 'C:/Program Files/Git/bin/git'
+
+subprocess.Popen([path, 'add', '.'])
+subprocess.Popen([path, 'commit', '-m', '"minor changes"'])
+subprocess.Popen([path, 'push', 'origin', 'master'])
