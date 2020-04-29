@@ -9,4 +9,3 @@ with open('text.txt', 'w') as update:
 
 subprocess.Popen(['C:/Program Files/Git/bin/git', 'add', '.'])
 subprocess.Popen(['C:/Program Files/Git/bin/git', 'commit', '-m', '"minor changes"'])
-subprocess.end()
